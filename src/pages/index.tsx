@@ -5,6 +5,7 @@ import { Presentation } from '../components/Home';
 import { Subjects } from '../components/Subjects';
 import { Information } from '../components/Information';
 import { Sponsors } from '../components/Sponsors';
+import { Footer } from '../components/Footer';
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Information />
       <Subjects />
       <Sponsors />
+      <Footer />
     </>
   )
 }
