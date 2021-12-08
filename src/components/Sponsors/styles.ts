@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  background-color: ${({theme}) => theme.colors.backgroundLight};
+  height: 100vh;
+  width: 100%;
+  padding-top: 77px;
+`;
+
 export const ContainerSponsors = styled.main`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 100vh;
   margin-top: 5rem;
 
   display: flex;
