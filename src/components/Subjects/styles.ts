@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 export const Container = styled.main`
   min-height: 100vh;
+  padding-top: 77px;
 
   h1 { 
-    margin-top: 77px;
     font-weight: 700;
     font-size: 48px;
     color: ${({theme}) => theme.colors.white};

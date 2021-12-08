@@ -40,14 +40,15 @@ export const LeftFooter = styled.div`
   margin-left: 200px;
   
   ul {
+
+    & + ul li:hover {
+      text-decoration: underline;
+    }
+
     li {
       line-height: 2rem;
       color: ${({theme}) => theme.colors.footerText};
       cursor: pointer;
-
-      &:hover {
-        text-decoration: underline;
-      } 
 
       &:first-child {
         color: ${({theme}) => theme.colors.white};
@@ -62,6 +63,10 @@ export const LeftFooter = styled.div`
 
     a {
       color: ${({theme}) => theme.colors.footerText};
+
+      &:hover {
+        text-decoration: underline;
+      } 
     }
   }
 `;
