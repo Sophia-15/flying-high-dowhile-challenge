@@ -8,6 +8,8 @@ export default {
     white: '#FFFFFF',
     subtitleText: '#B4B4B4',
     subjectText: '#D2D5DF',
+    titleCard: '#F9F9FB',
+    borderColor: '#D2D5DF',
 
     blue: '#2393FE',
     darkenBlue: '#113254',
