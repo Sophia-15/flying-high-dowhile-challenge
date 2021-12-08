@@ -48,6 +48,14 @@ export const LeftHome = styled.section`
     font-size: 1.125rem;
     outline: none;
     font-weight: 700;
+    border: none;
+    transition: transform .5s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px);
+      filter: brightness(0.8);
+    }
   }
 `;
 
