@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: ${({theme}) => theme.colors.backgroundLight};
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding-top: 77px;
 `;
@@ -11,7 +11,6 @@ export const ContainerInformation = styled.main`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background-color: ${({theme}) => theme.colors.backgroundLight};
 
   display: flex;
   justify-content: center;

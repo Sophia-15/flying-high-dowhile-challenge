@@ -9,7 +9,7 @@ export const ContainerHome = styled.main`
   justify-content: space-between;
   align-items: center;
 
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
 `;
 
 export const LeftHome = styled.section`
