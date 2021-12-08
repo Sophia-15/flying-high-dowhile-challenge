@@ -5,7 +5,9 @@ import { Presentation } from '../components/Home';
 
 export default function Home() {
   return (
-    <Presentation />
-    <Header />
+    <>
+      <Header />
+      <Presentation />
+    </>
   )
 }
