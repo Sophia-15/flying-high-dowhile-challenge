@@ -55,23 +55,33 @@ export function Footer(){
       <FooterFooter>
           <SocialMedias>
             <button>
-              <BsTwitter size="28" />
+              <a href="https://twitter.com/devpoop1">
+                <BsTwitter size="28" />
+              </a>
             </button>
 
             <button>
-              <BsGithub size="28" />
+              <a href="https://github.com/Sophia-15">
+                <BsGithub size="28" />
+              </a>
+            </button>
+ 
+            <button>
+              <a href="https://www.instagram.com/nikolas.dev/">
+                <BsInstagram size="28" />
+              </a>
             </button>
 
             <button>
-              <BsInstagram size="28" />
+              <a href="https://www.linkedin.com/in/nikolas-santana-/">
+                <BsLinkedin size="28" />
+              </a>
             </button>
 
             <button>
-              <BsLinkedin size="28" />
-            </button>
-
-            <button>
-              <SiDiscord size="28" />
+              <a href="https://www.youtube.com/watch?v=6yoytnzR0Zo">
+                <SiDiscord size="28" />
+              </a>
             </button>
           </SocialMedias>
 
