@@ -10,6 +10,8 @@ export default {
     subjectText: '#D2D5DF',
     titleCard: '#F9F9FB',
     borderColor: '#D2D5DF',
+    buttonColor: '#272327',
+    footerFooter: '#A7A7A7',
 
     blue: '#2393FE',
     darkenBlue: '#113254',
