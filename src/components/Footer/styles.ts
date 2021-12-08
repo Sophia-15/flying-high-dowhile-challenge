@@ -43,10 +43,20 @@ export const LeftFooter = styled.div`
     li {
       line-height: 2rem;
       color: ${({theme}) => theme.colors.footerText};
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      } 
 
       &:first-child {
         color: ${({theme}) => theme.colors.white};
         font-weight: 700;
+
+        &:hover {
+          cursor: default;
+          text-decoration: none;
+        } 
       }
     }
   }
