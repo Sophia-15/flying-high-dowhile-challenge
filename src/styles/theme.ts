@@ -7,6 +7,8 @@ export default {
     footerText: '#A8A8B3',
     white: '#FFFFFF',
     subtitleText: '#B4B4B4',
+    titleCard: '#F9F9FB',
+    borderColor: '#D2D5DF',
 
     blue: '#2393FE',
     yellow: '#FFAC24',
