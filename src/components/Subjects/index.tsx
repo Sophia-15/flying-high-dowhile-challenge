@@ -155,7 +155,9 @@ export function Subjects() {
         <h1>Conteúdos</h1>
 
         <SubjectsContainer>
-          <ProgrammingSubject  ref={ref}>
+          <ProgrammingSubject  
+            ref={ref}
+          >
             <div className="circleIcon">
               <FiCode />
             </div>

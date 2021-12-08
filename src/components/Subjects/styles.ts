@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled.main`
-  height: calc(100vh - 6rem);
+  min-height: 100vh;
 
   h1 { 
     margin-top: 77px;
@@ -52,7 +53,7 @@ export const SubjectsContainer = styled.section`
   }
 `
 
-export const ProgrammingSubject = styled.div`
+export const ProgrammingSubject = styled(motion.div)`
   .circleIcon {
     background: ${({theme}) => theme.colors.darkenBlue};
     color: ${({theme}) => theme.colors.blue};
@@ -60,7 +61,7 @@ export const ProgrammingSubject = styled.div`
   }
 `;
 
-export const FinancialEducationSubject = styled.div`
+export const FinancialEducationSubject = styled(motion.div)`
   .circleIcon {
     background: ${({theme}) => theme.colors.darkenGreen};
     color: ${({theme}) => theme.colors.green};
@@ -68,7 +69,7 @@ export const FinancialEducationSubject = styled.div`
   }
 `;
 
-export const ForeignLanguageSubject = styled.div`
+export const ForeignLanguageSubject = styled(motion.div)`
   .circleIcon {
     background: ${({theme}) => theme.colors.darkenOrange};
     color: ${({theme}) => theme.colors.orange};
@@ -76,7 +77,7 @@ export const ForeignLanguageSubject = styled.div`
   }
 `;
 
-export const EntrepreneurshipSubject = styled.div`
+export const EntrepreneurshipSubject = styled(motion.div)`
   .circleIcon {
     background: ${({theme}) => theme.colors.darkenRed};
     color: ${({theme}) => theme.colors.red};
