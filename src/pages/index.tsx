@@ -4,6 +4,7 @@ import { Header } from '../components/Header';
 import { Presentation } from '../components/Home';
 import { Subjects } from '../components/Subjects';
 import { Information } from '../components/Information';
+import { Sponsors } from '../components/Sponsors';
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Presentation />
       <Information />
       <Subjects />
+      <Sponsors />
     </>
   )
 }
