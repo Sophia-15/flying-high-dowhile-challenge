@@ -59,6 +59,10 @@ export const LeftFooter = styled.div`
         } 
       }
     }
+
+    a {
+      color: ${({theme}) => theme.colors.footerText};
+    }
   }
 `;
 

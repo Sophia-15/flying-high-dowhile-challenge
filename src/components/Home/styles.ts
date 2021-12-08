@@ -44,7 +44,6 @@ export const LeftHome = styled.section`
 
     border-radius: .5rem;
     background: ${({theme}) => theme.colors.yellow};
-    color: ${({theme}) => theme.colors.background};
     font-size: 1.125rem;
     outline: none;
     font-weight: 700;
