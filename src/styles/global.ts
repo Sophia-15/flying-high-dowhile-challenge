@@ -16,6 +16,21 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  ul {
+    list-style: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: ${({theme}) => theme.colors.background};
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({theme}) => theme.colors.blue};
+    border-radius: 5px;
+  }
+
   @media (max-width: 1080px) {
     html {
       font-size: 93.75%;
