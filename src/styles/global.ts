@@ -12,6 +12,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${({theme}) => theme.colors.background};
   }
 
+  a {
+    text-decoration: none;
+  }
+
   @media (max-width: 1080px) {
     html {
       font-size: 93.75%;
