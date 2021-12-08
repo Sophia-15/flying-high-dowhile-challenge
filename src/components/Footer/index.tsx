@@ -8,7 +8,7 @@ import { ContainerFooter, ContentFooter, Creators, FooterFooter, LeftFooter, Rig
 
 export function Footer(){
   return (
-    <ContainerFooter>
+    <ContainerFooter id="contact">
       <ContentFooter>
         <GridFooterContainer>
           <RightFooter>
@@ -20,11 +20,21 @@ export function Footer(){
           <LeftFooter>
             <ul>
               <li>Tópicos</li>
-              <li>Home</li>
-              <li>Projeto</li>
-              <li>Conteúdo</li>
-              <li>Patrocinadores</li>
-              <li>Contato</li>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#project">Projeto</a>
+              </li>
+              <li>
+                <a href="#subject">Conteúdo</a>
+              </li>
+              <li>
+                <a href="#sponsors">Patrocinadores</a>
+              </li>
+              <li>
+                <a href="#contact">Contato</a>
+              </li>
             </ul>
             
             <ul>

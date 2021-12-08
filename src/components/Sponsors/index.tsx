@@ -4,7 +4,7 @@ import { Container, ContainerSponsors, ContentSponsors } from './styles'
 
 export function Sponsors(){
   return (
-    <Container>
+    <Container id="sponsors">
       <ContainerSponsors>
         <h1>Patrocinadores</h1>
 

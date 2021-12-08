@@ -10,11 +10,11 @@ export function Header() {
 
 
         <nav>
-        <a href="">Home</a>
-        <a href="">Projeto</a>
-        <a href="">Conteúdo</a>
-        <a href="">Patrocinadores</a>
-        <a href="">Contato</a>
+        <a href="#home">Home</a>
+        <a href="#project">Projeto</a>
+        <a href="#subject">Conteúdo</a>
+        <a href="#sponsors">Patrocinadores</a>
+        <a href="#contact">Contato</a>
       </nav>
       </div>
     </HeaderContainer>

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 
 import { ContainerHome, LeftHome, RightHome } from './styles';
@@ -5,8 +6,17 @@ import { ContainerHome, LeftHome, RightHome } from './styles';
 import './styles.ts';
 
 export function Presentation() {
+  function toProjectInfo() {
+    window.scrollTo({
+      top: window.innerHeight
+    })
+  }
+
   return(
-    <ContainerHome>
+    <ContainerHome id="home">
+      <Head>
+        <title>Home | FlyingHigh</title>
+      </Head>
       <LeftHome>
         <h1>Venha construir o seu futuro e <span>voe com a gente</span>.</h1>
       
@@ -15,7 +25,7 @@ export function Presentation() {
         sua carreira de forma gratuita, acessível e objetiva.
         </p>
 
-        <button>
+        <button onClick={toProjectInfo}>
           Venha conhecer
         </button>
       </LeftHome>

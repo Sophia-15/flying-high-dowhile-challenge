@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body { 
     background-color: ${({theme}) => theme.colors.background};
   }
