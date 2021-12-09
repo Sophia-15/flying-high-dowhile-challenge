@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.main`
   background-color: ${({theme}) => theme.colors.backgroundLight};
   min-height: 100vh;
   width: 100%;
   padding-top: 77px;
 `;
 
-export const ContainerInformation = styled.main`
+export const ContainerInformation = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
