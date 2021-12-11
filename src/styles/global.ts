@@ -16,6 +16,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${({theme}) => theme.colors.background};
   }
 
+  button {
+    cursor: pointer;
+  }
+
   a {
     text-decoration: none;
   }
@@ -35,27 +39,13 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 5px;
   }
 
-  @media (max-width: 1080px) {
-    html {
-      font-size: 93.75%;
+  html {
+    @media (max-width: 1080px) {
+      font-size: 93.75%; //15px
     }
-  }
 
-  @media (max-width: 760px) {
-    html {
-      font-size: 77.5%;
-    }
-  }
-
-  @media (max-width: 630px) {
-    html {
-      font-size: 67.5%;
-    }
-  }
-
-  @media (max-width: 550px) {
-    html {
-      font-size: 57.5%;
+    @media (max-width: 720px) {
+      font-size: 87.5%; //14px
     }
   }
 `;

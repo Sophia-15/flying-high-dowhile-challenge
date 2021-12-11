@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    nav { 
+    nav {
       a { 
         display: inline-block;
         position: relative;
@@ -51,6 +51,84 @@ export const HeaderContainer = styled.header`
         & + a {
           margin-left: 1.5rem;
         }
+      }
+    }
+    .menu-btn {
+        display: none;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        /* border: 3px solid #fff; */
+      }
+      .menu-btn__burger {
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before,
+      .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before {
+        transform: translateY(-16px);
+      }
+      .menu-btn__burger::after {
+        transform: translateY(16px);
+      }
+      
+      .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+      }
+      .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      } 
+  }
+
+  @media (max-width: 1480px) {
+    .headerContent {
+      margin: 0 5rem;
+    }
+  }
+
+  @media (max-width: 970px) {
+    nav {
+      display: none;
+    }
+
+    .menu-btn {
+      display: flex !important;
+    }
+  }
+
+  @media (max-width: 659px) {
+    .headerContent {
+      margin: 0 2rem;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .headerContent {
+      img {
+        width: 180px;
       }
     }
   }
