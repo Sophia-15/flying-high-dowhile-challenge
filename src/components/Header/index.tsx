@@ -16,9 +16,11 @@ export function Header() {
     menuBtn.addEventListener('click', () => {
       if(!menuOpen) {
         menuBtn.classList.add('open');
+        menuBtn.classList.add('fixed');
         menuOpen = true;
       } else {
         menuBtn.classList.remove('open');
+        menuBtn.classList.remove('fixed');
         menuOpen = false;
       }
     });
@@ -42,13 +44,15 @@ export function Header() {
         </div>
       </div>
       {showMenu && (
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#project">Projeto</a></li>
-          <li><a href="#subject">Conteúdo</a></li>
-          <li><a href="#sponsors">Patrocinadores</a></li>
-          <li><a href="contact">Contato</a></li>
-        </ul>
+        <nav className="responsive-navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project">Projeto</a></li>
+            <li><a href="#subject">Conteúdo</a></li>
+            <li><a href="#sponsors">Patrocinadores</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
       )}
     </HeaderContainer>
   );
