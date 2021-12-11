@@ -13,8 +13,6 @@ export const ContainerHome = styled.main`
 
   @media (max-width: 1490px) {
     justify-content: space-around;
-
-    margin: 0 1rem;
   }
 
   @media (max-width: 1120px) {
@@ -102,12 +100,13 @@ export const LeftHome = styled.section`
     }
 
     p {
-      max-width: 350px;
+      width: 310px;
     }
   }
 
   @media (max-width: 430px) {
-    max-width: 300px;
+    width: 300px;
+    margin-top: 5rem;
     
     h1 {
       font-size: 3rem;
