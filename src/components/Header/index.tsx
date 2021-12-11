@@ -1,22 +1,55 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { HeaderContainer } from './styles'
 
 export function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  function toggleMenu() {
+    setShowMenu(!showMenu);   
+  }
+
+  useEffect(() => {
+    const menuBtn = document.querySelector('.menu-btn');
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+      } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+      }
+    });
+  }, [])
+
   return (
     <HeaderContainer>
       <div className="headerContent">
         <img src="/Logo.svg" alt="Logo Flying High" />
 
-
         <nav>
-        <a href="#home">Home</a>
-        <a href="#project">Projeto</a>
-        <a href="#subject">Conteúdo</a>
-        <a href="#sponsors">Patrocinadores</a>
-        <a href="#contact">Contato</a>
-      </nav>
+          <a href="#home">Home</a>
+          <a href="#project">Projeto</a>
+          <a href="#subject">Conteúdo</a>
+          <a href="#sponsors">Patrocinadores</a>
+          <a href="#contact">Contato</a>
+        </nav>
+
+        <div className="menu-btn" onClick={() => toggleMenu()}>
+          <div className="menu-btn__burger"></div>
+        </div>
       </div>
+      {showMenu && (
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#project">Projeto</a></li>
+          <li><a href="#subject">Conteúdo</a></li>
+          <li><a href="#sponsors">Patrocinadores</a></li>
+          <li><a href="contact">Contato</a></li>
+        </ul>
+      )}
     </HeaderContainer>
   );
 }
