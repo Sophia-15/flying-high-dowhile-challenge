@@ -66,31 +66,31 @@ export function Footer(){
           <SocialMedias>
             <button>
               <a href="https://twitter.com/devpoop1">
-                <BsTwitter size="28" />
+                <BsTwitter />
               </a>
             </button>
 
             <button>
               <a href="https://github.com/Sophia-15">
-                <BsGithub size="28" />
+                <BsGithub />
               </a>
             </button>
  
             <button>
               <a href="https://www.instagram.com/nikolas.dev/">
-                <BsInstagram size="28" />
+                <BsInstagram />
               </a>
             </button>
 
             <button>
               <a href="https://www.linkedin.com/in/nikolas-santana-/">
-                <BsLinkedin size="28" />
+                <BsLinkedin />
               </a>
             </button>
 
             <button>
               <a href="https://www.youtube.com/watch?v=6yoytnzR0Zo">
-                <SiDiscord size="28" />
+                <SiDiscord />
               </a>
             </button>
           </SocialMedias>
