@@ -16,20 +16,25 @@ export const Container = styled.main`
 export const SubjectsContainer = styled.section`
   width: 100%;
   max-width: 1440px;
+  
   margin: 0 auto;
   margin-top: 100px;
+
+
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
 
   h2 {
+    margin: 2rem;
     font-weight: 700;
     color: ${({theme}) => theme.colors.white};
     font-size: 1.25rem;
-    margin: 19px 0;
   }
 
   .circleIcon {
+    margin: 2rem;
     height: 56px;
     width: 56px;
     border-radius: 50%;
@@ -47,9 +52,12 @@ export const SubjectsContainer = styled.section`
   li {
     display: flex;
     align-items: center;
+
+    margin: 0 2rem;
     gap: .5rem;
-    color: ${({theme}) => theme.colors.subjectText};
     margin-bottom: 16px;
+
+    color: ${({theme}) => theme.colors.subjectText};
   }
 `
 

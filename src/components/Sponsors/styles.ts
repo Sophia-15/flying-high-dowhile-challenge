@@ -30,6 +30,16 @@ export const ContainerSponsors = styled.div`
     text-align: center;
     font-size: 2rem;
   }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const ContentSponsors = styled.section`
@@ -43,5 +53,12 @@ export const ContentSponsors = styled.section`
     margin: 3rem;
     width: 400px;
     height: 80px;
+  }
+
+  @media (max-width: 480px) {
+    img {
+      width: 270px;
+      height: 80px;
+    }
   }
 `;

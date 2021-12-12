@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.main`
   background-color: ${({theme}) => theme.colors.backgroundLight};
+  
   min-height: 100vh;
   width: 100%;
+  
   padding-top: 77px;
 `;
 
@@ -33,6 +35,10 @@ export const ContentInformation = styled.main`
   justify-content: space-between;
   align-items: center;
   display: flex;
+
+  @media (max-width: 810px) {
+    flex-direction: column;
+  }
 `;
 
 export const LeftInformation = styled.section`
@@ -40,28 +46,58 @@ export const LeftInformation = styled.section`
     width: 550px;
     height: 420px;
   }
+
+  @media (max-width: 870px) {
+    img {
+      width: 450px;
+      height: 320px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    img {
+      width: 350px;
+      height: 220px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    img {
+      width: 320px;
+      height: 180px;
+    }
+  }
 `;
 
 export const RightInformation = styled.section`
-  width: 600px;
+  max-width: 600px;
+  
   display: flex;
   flex-direction: column;
+
+  margin: 0 2rem;
 `;
 
 export const CardInformation = styled.div`
-  width: 520px;
+  max-width: 520px;
   height: 175px;
   
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-
   border-bottom: 1px solid ${({theme}) => theme.colors.borderColor};
 
   &:last-child {
     margin: 4rem 0;
     border: 0;
+  }
+
+  @media (max-width: 360px) {
+    &:last-child {
+      margin: 8rem 0;
+      border: 0;
+    }
   }
 `;
 
@@ -77,7 +113,7 @@ export const ContentCard = styled.div`
   }
 
   p {
-    width: 440px;
+    max-width: 440px;
     line-height: 1.75rem;
     margin-top: 16px;
     color: ${({theme}) => theme.colors.descriptionText};
