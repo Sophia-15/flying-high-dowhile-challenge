@@ -13,10 +13,10 @@ export default function Home() {
     <>
       <Header />
       <Presentation />
-      {/* <Information />
+      <Information />
       <Subjects />
-      <Sponsors /> */}
-      {/* <Footer /> */}
+      <Sponsors />
+      <Footer />
     </>
   )
 }
