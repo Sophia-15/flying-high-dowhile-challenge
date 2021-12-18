@@ -1,9 +1,18 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
-import { Container, EntrepreneurshipSubject, FinancialEducationSubject, ForeignLanguageSubject, ProgrammingSubject, SubjectsContainer } from './styles'
-import { FiBook, FiCode, FiDollarSign, FiShare2 } from 'react-icons/fi';
+import {
+  FiBook, FiCode, FiDollarSign, FiShare2,
+} from 'react-icons/fi';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import {
+  Container,
+  EntrepreneurshipSubject,
+  FinancialEducationSubject,
+  ForeignLanguageSubject,
+  ProgrammingSubject,
+  SubjectsContainer,
+} from './styles';
 
 type Subjects = {
   id: number;
@@ -11,14 +20,13 @@ type Subjects = {
 }
 
 export function Subjects() {
-  const controls = useAnimation()
-  const {ref, inView} = useInView()
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible')
+      controls.start('visible');
     }
-
   }, [controls, inView]);
 
   const variants = {
@@ -33,213 +41,218 @@ export function Subjects() {
     hidden: { opacity: 0, y: -10 },
   };
 
-
   const entrepreneurshipSubjects: Subjects[] = [
     {
       id: Math.random(),
-      name: 'Marketing'
+      name: 'Marketing',
     },
     {
       id: Math.random(),
-      name: 'Publicidade'
-    },{
+      name: 'Publicidade',
+    }, {
       id: Math.random(),
-      name: 'Soft Skills'
+      name: 'Soft Skills',
     },
     {
       id: Math.random(),
-      name: 'Administração'
+      name: 'Administração',
     },
     {
       id: Math.random(),
-      name: 'Economia'
+      name: 'Economia',
     },
     {
       id: Math.random(),
-      name: 'Gestão'
+      name: 'Gestão',
     },
-  ]
-  
+  ];
+
   const foreignLanguageSubjects: Subjects[] = [
     {
       id: Math.random(),
-      name: 'Inglês'
+      name: 'Inglês',
     },
     {
       id: Math.random(),
-      name: 'Espanhol'
-    },{
+      name: 'Espanhol',
+    }, {
       id: Math.random(),
-      name: 'Francês'
+      name: 'Francês',
     },
     {
       id: Math.random(),
-      name: 'Italiano'
+      name: 'Italiano',
     },
     {
       id: Math.random(),
-      name: 'Alemão'
+      name: 'Alemão',
     },
-  ]
+  ];
 
   const financialEducationSubjects: Subjects[] = [
     {
       id: Math.random(),
-      name: 'Controle de Finanças'
+      name: 'Controle de Finanças',
     },
     {
       id: Math.random(),
-      name: 'Investimentos'
-    },{
+      name: 'Investimentos',
+    }, {
       id: Math.random(),
-      name: 'Blockchain'
+      name: 'Blockchain',
     },
     {
       id: Math.random(),
-      name: 'NFT'
+      name: 'NFT',
     },
     {
       id: Math.random(),
-      name: 'Tesouro Direto'
+      name: 'Tesouro Direto',
     },
     {
       id: Math.random(),
-      name: 'Cálculo de CLT'
+      name: 'Cálculo de CLT',
     },
-  ]
+  ];
 
   const programmingSubjects: Subjects[] = [
     {
       id: Math.random(),
-      name: 'HTML'
+      name: 'HTML',
     },
     {
       id: Math.random(),
-      name: 'CSS'
-    },{
+      name: 'CSS',
+    }, {
       id: Math.random(),
-      name: 'Javascript'
+      name: 'Javascript',
     },
     {
       id: Math.random(),
-      name: 'ReactJS'
+      name: 'ReactJS',
     },
     {
       id: Math.random(),
-      name: 'React Native'
+      name: 'React Native',
     },
     {
       id: Math.random(),
-      name: 'NodeJS'
+      name: 'NodeJS',
     },
     {
       id: Math.random(),
-      name: 'Dart'
+      name: 'Dart',
     },
     {
       id: Math.random(),
-      name: 'Flutter'
+      name: 'Flutter',
     },
     {
       id: Math.random(),
-      name: 'C#'
+      name: 'C#',
     },
     {
       id: Math.random(),
-      name: 'Unity'
+      name: 'Unity',
     },
-  ]
+  ];
 
   return (
-    <Container id="subject" >
-        <h1>Conteúdos</h1>
+    <Container id="subject">
+      <h1>Conteúdos</h1>
 
-        <SubjectsContainer>
-          <ProgrammingSubject  
-            ref={ref}
-          >
-            <div className="circleIcon">
-              <FiCode />
-            </div>
-            <h2>Programação</h2>
-            <ul>
+      <SubjectsContainer>
+        <ProgrammingSubject
+          ref={ref}
+        >
+          <div className="circleIcon">
+            <FiCode />
+          </div>
+          <h2>Programação</h2>
+          <ul>
             {programmingSubjects.map((subject, i) => (
-                <motion.li
+              <motion.li
                 animate={controls}
                 initial="hidden"
                 variants={variants}
                 key={subject.id}
                 custom={i}
-                >
-                <img src="/blueCheck.svg" alt="Check azul" /> 
+              >
+                <img src="/blueCheck.svg" alt="Check azul" />
                 {subject.name}
               </motion.li>
-              ))}
-            </ul>
-          </ProgrammingSubject>
+            ))}
+          </ul>
+        </ProgrammingSubject>
 
-          <FinancialEducationSubject>
-            <div className="circleIcon">
-              <FiDollarSign />
-            </div>
-            <h2>Educação Financeira</h2>
-            <ul>
-              {financialEducationSubjects.map((subject, i) => (
-                <motion.li
+        <FinancialEducationSubject
+          ref={ref}
+        >
+          <div className="circleIcon">
+            <FiDollarSign />
+          </div>
+          <h2>Educação Financeira</h2>
+          <ul>
+            {financialEducationSubjects.map((subject, i) => (
+              <motion.li
                 animate={controls}
                 initial="hidden"
                 variants={variants}
                 key={subject.id}
                 custom={i}
-                >
-                <img src="/greenCheck.svg" alt="Check verde" /> 
+              >
+                <img src="/greenCheck.svg" alt="Check verde" />
                 {subject.name}
               </motion.li>
-              ))}
-            </ul>
-          </FinancialEducationSubject>
+            ))}
+          </ul>
+        </FinancialEducationSubject>
 
-          <ForeignLanguageSubject>
-            <div className="circleIcon">
-              <FiBook />
-            </div>
-            <h2>Língua Estrangeira</h2>
-            <ul>
+        <ForeignLanguageSubject
+          ref={ref}
+        >
+          <div className="circleIcon">
+            <FiBook />
+          </div>
+          <h2>Língua Estrangeira</h2>
+          <ul>
             {foreignLanguageSubjects.map((subject, i) => (
-                <motion.li
+              <motion.li
                 animate={controls}
                 initial="hidden"
                 variants={variants}
                 key={subject.id}
                 custom={i}
-                >
-                <img src="/orangeCheck.svg" alt="Check laranja" /> 
+              >
+                <img src="/orangeCheck.svg" alt="Check laranja" />
                 {subject.name}
               </motion.li>
-              ))}
-            </ul>
-          </ForeignLanguageSubject>
+            ))}
+          </ul>
+        </ForeignLanguageSubject>
 
-          <EntrepreneurshipSubject>
-            <div className="circleIcon">
-              <FiShare2 />
-            </div>
-            <h2>Empreendedorismo</h2>
-            <ul>
-              {entrepreneurshipSubjects.map((subject, i) => (
-                <motion.li
+        <EntrepreneurshipSubject
+          ref={ref}
+        >
+          <div className="circleIcon">
+            <FiShare2 />
+          </div>
+          <h2>Empreendedorismo</h2>
+          <ul>
+            {entrepreneurshipSubjects.map((subject, i) => (
+              <motion.li
                 animate={controls}
                 initial="hidden"
                 variants={variants}
                 key={subject.id}
                 custom={i}
-                >
-                <img src="/redCheck.svg" alt="Check vermelho" /> 
+              >
+                <img src="/redCheck.svg" alt="Check vermelho" />
                 {subject.name}
               </motion.li>
-              ))}
-            </ul>
-          </EntrepreneurshipSubject>
+            ))}
+          </ul>
+        </EntrepreneurshipSubject>
       </SubjectsContainer>
     </Container>
   );

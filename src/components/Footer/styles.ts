@@ -2,25 +2,25 @@ import styled from 'styled-components';
 
 export const ContainerFooter = styled.footer`
   height: 462px;
-  border-bottom: 1px solid #29292E;
+  border-bottom: 1px solid #29292e;
   display: flex;
   flex-direction: column;
 
   @media (max-width: 1040px) {
     border: 0;
   }
-`
+`;
 
 export const ContentFooter = styled.main`
-  border-bottom: 1px solid ${({theme}) => theme.colors.buttonColor};
-  border-top: 1px solid ${({theme}) => theme.colors.buttonColor};
-`
+  border-bottom: 1px solid ${({ theme }) => theme.colors.buttonColor};
+  border-top: 1px solid ${({ theme }) => theme.colors.buttonColor};
+`;
 
 export const GridFooterContainer = styled.div`
   display: grid;
-  grid-template-columns: 600px  837px;
+  grid-template-columns: 600px 837px;
 
-  width: 100%;  
+  width: 100%;
   max-width: 1440px;
 
   height: 316px;
@@ -34,7 +34,7 @@ export const GridFooterContainer = styled.div`
 
   @media (max-width: 1040px) {
     min-height: 450px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,12 +47,12 @@ export const GridFooterContainer = styled.div`
 `;
 
 export const RightFooter = styled.div`
-  border-right: 1px solid ${({theme}) => theme.colors.buttonColor};
+  border-right: 1px solid ${({ theme }) => theme.colors.buttonColor};
   margin: auto 0;
 
   span {
-    color: ${({theme}) => theme.colors.footerText};
-    
+    color: ${({ theme }) => theme.colors.footerText};
+
     display: block;
 
     line-height: 2rem;
@@ -67,12 +67,11 @@ export const LeftFooter = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  
+
   margin-top: 71px;
   margin-left: 200px;
-  
-  ul {
 
+  ul {
     & + ul li:hover {
       text-decoration: underline;
     }
@@ -80,26 +79,26 @@ export const LeftFooter = styled.div`
     li {
       margin: 0 2rem;
       line-height: 2rem;
-      color: ${({theme}) => theme.colors.footerText};
+      color: ${({ theme }) => theme.colors.footerText};
       cursor: pointer;
 
       &:first-child {
-        color: ${({theme}) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.white};
         font-weight: 700;
 
         &:hover {
           cursor: default;
           text-decoration: none;
-        } 
+        }
       }
     }
 
     a {
-      color: ${({theme}) => theme.colors.footerText};
+      color: ${({ theme }) => theme.colors.footerText};
 
       &:hover {
         text-decoration: underline;
-      } 
+      }
     }
   }
 
@@ -133,13 +132,13 @@ export const FooterFooter = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+
   gap: 0 10rem;
   margin: auto 0;
 
   @media (max-width: 600px) {
     margin: 1rem 0;
-    
+
     display: flex;
     flex-direction: column;
   }
@@ -148,30 +147,30 @@ export const FooterFooter = styled.footer`
 export const SocialMedias = styled.div`
   button {
     margin: 5px 20px;
-    
+
     height: 48px;
     width: 48px;
-    
-    background: ${({theme}) => theme.colors.buttonColor};
+
+    background: ${({ theme }) => theme.colors.buttonColor};
     border: none;
     outline: none;
-    
+
     border-radius: 0.5rem;
-    transition: all .2s;
+    transition: all 0.2s;
     cursor: pointer;
-    
+
     &:hover {
-      background: ${({theme}) => theme.colors.blue};
-      
+      background: ${({ theme }) => theme.colors.blue};
+
       svg {
-        color: ${({theme}) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.white};
       }
     }
 
     a {
       svg {
         font-size: 1.75rem;
-        color: ${({theme}) => theme.colors.blue}; 
+        color: ${({ theme }) => theme.colors.blue};
       }
     }
   }
@@ -191,17 +190,17 @@ export const SocialMedias = styled.div`
       a {
         svg {
           font-size: 1.25rem;
-      }
+        }
       }
     }
   }
-`
+`;
 
 export const Creators = styled.div`
   h2 {
     font-weight: 500;
     font-size: 1.1rem;
-    color: ${({theme}) => theme.colors.footerFooter};
+    color: ${({ theme }) => theme.colors.footerFooter};
   }
 
   @media (max-width: 600px) {
@@ -212,4 +211,4 @@ export const Creators = styled.div`
     max-width: 300px;
     text-align: center;
   }
-`
+`;

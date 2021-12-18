@@ -1,12 +1,20 @@
-import React from 'react';
-
-import { BsTwitter, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs'
+import {
+  BsTwitter, BsGithub, BsInstagram, BsLinkedin,
+} from 'react-icons/bs';
 import { SiDiscord } from 'react-icons/si';
 
-import { ContainerFooter, ContentFooter, Creators, FooterFooter, LeftFooter, RightFooter, GridFooterContainer, SocialMedias } from './styles'
+import {
+  ContainerFooter,
+  ContentFooter,
+  Creators,
+  FooterFooter,
+  LeftFooter,
+  RightFooter,
+  GridFooterContainer,
+  SocialMedias,
+} from './styles';
 
-
-export function Footer(){
+export function Footer() {
   return (
     <ContainerFooter id="contact">
       <ContentFooter>
@@ -36,7 +44,7 @@ export function Footer(){
                 <a href="#contact">Contato</a>
               </li>
             </ul>
-            
+
             <ul>
               <li>Ações</li>
               <li>Cadastro</li>
@@ -44,15 +52,15 @@ export function Footer(){
               <li>Parcerias</li>
               <li>Vagas</li>
             </ul>
-            
+
             <ul>
               <li>Contato</li>
               <li>contato@flying.com.br</li>
               <li>
-              +55 11 96972-7693
+                +55 11 96972-7693
               </li>
             </ul>
-            
+
             <ul>
               <li>Dúvidas</li>
               <li>Central de Ajuda</li>
@@ -63,41 +71,41 @@ export function Footer(){
       </ContentFooter>
 
       <FooterFooter>
-          <SocialMedias>
-            <button>
-              <a href="https://twitter.com/devpoop1">
-                <BsTwitter />
-              </a>
-            </button>
+        <SocialMedias>
+          <button type="button">
+            <a href="https://twitter.com/devpoop1">
+              <BsTwitter />
+            </a>
+          </button>
 
-            <button>
-              <a href="https://github.com/Sophia-15">
-                <BsGithub />
-              </a>
-            </button>
- 
-            <button>
-              <a href="https://www.instagram.com/nikolas.dev/">
-                <BsInstagram />
-              </a>
-            </button>
+          <button type="button">
+            <a href="https://github.com/Sophia-15">
+              <BsGithub />
+            </a>
+          </button>
 
-            <button>
-              <a href="https://www.linkedin.com/in/nikolas-santana-/">
-                <BsLinkedin />
-              </a>
-            </button>
+          <button type="button">
+            <a href="https://www.instagram.com/nikolas.dev/">
+              <BsInstagram />
+            </a>
+          </button>
 
-            <button>
-              <a href="https://www.youtube.com/watch?v=6yoytnzR0Zo">
-                <SiDiscord />
-              </a>
-            </button>
-          </SocialMedias>
+          <button type="button">
+            <a href="https://www.linkedin.com/in/nikolas-santana-/">
+              <BsLinkedin />
+            </a>
+          </button>
 
-          <Creators>
-            <h2>Site desenvolvido por Nikolas Santana e Sophia Gallindo.</h2>
-          </Creators>
+          <button type="button">
+            <a href="https://www.youtube.com/watch?v=6yoytnzR0Zo">
+              <SiDiscord />
+            </a>
+          </button>
+        </SocialMedias>
+
+        <Creators>
+          <h2>Site desenvolvido por Nikolas Santana e Sophia Gallindo.</h2>
+        </Creators>
       </FooterFooter>
     </ContainerFooter>
   );

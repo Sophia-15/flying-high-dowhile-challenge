@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  background-color: ${({theme}) => theme.colors.backgroundLight};
   min-height: 100vh;
   width: 100%;
   padding-top: 77px;
@@ -18,14 +17,14 @@ export const ContainerSponsors = styled.div`
 
   h1 {
     line-height: 3.25rem;
-    color: ${({theme}) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
     font-weight: 700;
     font-size: 3rem;
   }
 
   h2 {
     line-height: 3.25rem;
-    color: ${({theme}) => theme.colors.footerText};
+    color: ${({ theme }) => theme.colors.footerText};
     font-weight: 700;
     text-align: center;
     font-size: 2rem;

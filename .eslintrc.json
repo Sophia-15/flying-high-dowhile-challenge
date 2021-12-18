@@ -7,29 +7,68 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "prettier/airbnb",
-    "prettier/react"
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 13,
+    "ecmaVersion": 12,
     "sourceType": "module"
   },
   "plugins": [
     "react",
-    "@typescript-eslint",
-    "prettier"
+    "react-hooks",
+    "@typescript-eslint"
   ],
   "rules": {
-    "prettier/prettier": "error",
-    "space-before-function-paren": "off",
+    "react/function-component-definition": "off",
+    "@next/next/no-img-element": "off",
+    "no-useless-return": "off",
+    "camelcase": "off",
+    "import/no-duplicates": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "react/jsx-filename-extension": "off",
-    "react/function-component-definition": "off"
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "react/jsx-one-expression-per-line": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/require-default-props": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".tsx"
+        ]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "off",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "@typescript-eslint/camelcase": "off"
   }
 }

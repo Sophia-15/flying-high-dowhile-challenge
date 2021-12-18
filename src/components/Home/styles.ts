@@ -31,17 +31,17 @@ export const ContainerHome = styled.main`
 
 export const LeftHome = styled.section`
   max-width: 690px;
-  
+
   h1 {
     font-weight: 900;
     font-size: 4.5rem;
     line-height: 5rem;
 
-    color: ${({theme}) => theme.colors.descriptionText};
+    color: ${({ theme }) => theme.colors.descriptionText};
   }
 
   h1 span {
-    color: ${({theme}) => theme.colors.blue};
+    color: ${({ theme }) => theme.colors.blue};
   }
 
   p {
@@ -51,7 +51,7 @@ export const LeftHome = styled.section`
     font-size: 1.3rem;
     line-height: 2rem;
 
-    color: ${({theme}) => theme.colors.subtitleText};
+    color: ${({ theme }) => theme.colors.subtitleText};
   }
 
   button {
@@ -59,13 +59,13 @@ export const LeftHome = styled.section`
     width: 250px;
     height: 50px;
 
-    border-radius: .5rem;
-    background: ${({theme}) => theme.colors.yellow};
+    border-radius: 0.5rem;
+    background: ${({ theme }) => theme.colors.yellow};
     font-size: 1.125rem;
     outline: none;
     font-weight: 700;
     border: none;
-    transition: transform .5s;
+    transition: transform 0.5s;
     cursor: pointer;
 
     &:hover {
@@ -107,7 +107,7 @@ export const LeftHome = styled.section`
   @media (max-width: 430px) {
     width: 300px;
     margin-top: 5rem;
-    
+
     h1 {
       font-size: 3rem;
       line-height: 3.5rem;
