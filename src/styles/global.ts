@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body { 
-    background-color: ${({theme}) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.background};
   }
 
   button {
@@ -32,10 +32,10 @@ export const GlobalStyle = createGlobalStyle`
     width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background-color: ${({theme}) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.background};
   }
   ::-webkit-scrollbar-thumb {
-    background-color: ${({theme}) => theme.colors.blue};
+    background-color: ${({ theme }) => theme.colors.blue};
     border-radius: 5px;
   }
 

@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import React from 'react';
 
 import { ContainerHome, LeftHome, RightHome } from './styles';
 
@@ -8,24 +7,24 @@ import './styles.ts';
 export function Presentation() {
   function toProjectInfo() {
     window.scrollTo({
-      top: window.innerHeight
-    })
+      top: window.innerHeight,
+    });
   }
 
-  return(
+  return (
     <ContainerHome id="home">
       <Head>
         <title>Home | FlyingHigh</title>
       </Head>
       <LeftHome>
         <h1>Venha construir o seu futuro e <span>voe com a gente</span>.</h1>
-      
+
         <p>
-        Ensinamos conteúdos relevantes para a
-        sua carreira de forma gratuita, acessível e objetiva.
+          Ensinamos conteúdos relevantes para a
+          sua carreira de forma gratuita, acessível e objetiva.
         </p>
 
-        <button onClick={toProjectInfo}>
+        <button type="button" onClick={toProjectInfo}>
           Venha conhecer
         </button>
       </LeftHome>

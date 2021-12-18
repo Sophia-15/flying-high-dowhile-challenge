@@ -26,5 +26,5 @@ export default {
     darkenGreen: '#23532C',
 
     yellow: '#FFAC24',
-  }
-}
+  },
+};
