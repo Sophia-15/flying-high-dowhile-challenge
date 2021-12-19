@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,7 +10,6 @@ import { BiLockAlt } from 'react-icons/bi';
 import { Input } from '../components/Input';
 
 import { ContainerSignUp, ContainerSignUpLeft, ContainerSignUpRight } from '../styles/pages/sign-up';
-import { Head } from 'next/document';
 
 export default function SingUp() {
   function submitTheSignUp() {
