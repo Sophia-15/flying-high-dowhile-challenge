@@ -51,10 +51,13 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
 
     nav {
+      display: flex;
+      align-items: center;
+
       a { 
         display: inline-block;
         position: relative;
-        padding: 0 0.5rem;
+        padding: 0 .5rem;
         line-height: 5rem;
         color: ${({theme}) => theme.colors.footerText};
         font-size: 1.1rem;
@@ -86,6 +89,41 @@ export const HeaderContainer = styled.header`
 
         & + a {
           margin-left: 1.5rem;
+        }
+      }
+
+      .sign-up {
+        width: 170px;
+        height: 40px;
+
+        margin: 0 1.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        border: 0;
+        border-radius: .5rem;
+        background: ${({theme}) => theme.colors.yellow};
+        
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 2rem;
+
+        a {
+          color: #000;
+
+          &::after {
+            background: ${({theme}) => theme.colors.yellow};
+          }
+        }
+
+        svg {
+          width: 24px;
+          height: 24px;
+          
+          color: #0C1015;
         }
       }
     }

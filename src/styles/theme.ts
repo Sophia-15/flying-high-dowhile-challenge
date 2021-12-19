@@ -12,6 +12,7 @@ export default {
     borderColor: '#D2D5DF',
     buttonColor: '#272327',
     footerFooter: '#A7A7A7',
+    inputColor: '#262627',
 
     blue: '#2393FE',
     darkenBlue: '#113254',
