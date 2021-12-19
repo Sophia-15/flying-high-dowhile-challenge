@@ -57,7 +57,7 @@ export const HeaderContainer = styled.header`
       a {
         display: inline-block;
         position: relative;
-        padding: 0 .5rem;
+        padding: 0 0.5rem;
         line-height: 5rem;
         color: ${({ theme }) => theme.colors.footerText};
         font-size: 1.1rem;
@@ -103,9 +103,9 @@ export const HeaderContainer = styled.header`
 
         cursor: pointer;
         border: 0;
-        border-radius: .5rem;
-        background: ${({theme}) => theme.colors.yellow};
-        
+        border-radius: 0.5rem;
+        background: ${({ theme }) => theme.colors.yellow};
+
         font-size: 1.1rem;
         font-weight: 500;
         line-height: 2rem;
@@ -114,15 +114,15 @@ export const HeaderContainer = styled.header`
           color: #000;
 
           &::after {
-            background: ${({theme}) => theme.colors.yellow};
+            background: ${({ theme }) => theme.colors.yellow};
           }
         }
 
         svg {
           width: 24px;
           height: 24px;
-          
-          color: #0C1015;
+
+          color: #0c1015;
         }
       }
     }
@@ -194,13 +194,15 @@ export const HeaderContainer = styled.header`
 
   @media (max-width: 1480px) {
     .headerContent {
-      margin: 0 5rem;
+      margin: 0 5%;
     }
   }
 
-  @media (max-width: 970px) {
-    nav {
-      display: none;
+  @media (max-width: 1316px) {
+    .headerContent {
+      nav {
+        display: none;
+      }
     }
 
     .menu-btn {

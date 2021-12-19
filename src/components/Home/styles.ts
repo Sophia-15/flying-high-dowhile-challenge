@@ -12,10 +12,6 @@ export const ContainerHome = styled.main`
   min-height: calc(100vh - 6rem);
 
   @media (max-width: 1490px) {
-    justify-content: space-around;
-  }
-
-  @media (max-width: 1120px) {
     margin-top: 5rem;
 
     display: flex;
@@ -74,7 +70,7 @@ export const LeftHome = styled.section`
     }
   }
 
-  @media (max-width: 1120px) {
+  @media (max-width: 1490px) {
     h1 {
       text-align: center;
     }

@@ -7,7 +7,7 @@ export const ContainerSignUp = styled.main`
   display: flex;
   justify-content: space-around;
   align-items: center;
-`
+`;
 
 export const ContainerSignUpLeft = styled.section`
   img {
@@ -24,7 +24,7 @@ export const ContainerSignUpLeft = styled.section`
 
     max-width: 600px;
 
-    color: ${({theme}) => theme.colors.footerText}
+    color: ${({ theme }) => theme.colors.footerText};
   }
 
   .sign-up-image {
@@ -39,7 +39,7 @@ export const ContainerSignUpLeft = styled.section`
   @media (max-width: 1020px) {
     display: none;
   }
-`
+`;
 
 export const ContainerSignUpRight = styled.section`
   max-width: 500px;
@@ -60,7 +60,7 @@ export const ContainerSignUpRight = styled.section`
     font-weight: 700;
     text-align: center;
 
-    color: ${({theme}) => theme.colors.white}
+    color: ${({ theme }) => theme.colors.white}
   }
 
   svg {
@@ -68,7 +68,7 @@ export const ContainerSignUpRight = styled.section`
     top: 78px;
     right: 153px;
     
-    color: ${({theme}) => theme.colors.footerText};
+    color: ${({ theme }) => theme.colors.footerText};
     
     width: 33px;
     height: 33px;
@@ -85,8 +85,10 @@ export const ContainerSignUpRight = styled.section`
     font-weight: 700;
 
     border-radius: .5rem;
-    background-color: ${({theme}) => theme.colors.yellow};
+    background-color: ${({ theme }) => theme.colors.yellow};
     transition: .2s;
+
+    border: 0;
 
     &:hover {
       filter: brightness(0.8);
@@ -107,4 +109,4 @@ export const ContainerSignUpRight = styled.section`
       }
   }
 }
-`
+`;

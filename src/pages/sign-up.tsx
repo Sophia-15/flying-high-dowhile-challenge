@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AiOutlineUser, AiOutlineMail } from 'react-icons/ai'
 import { BiLockAlt } from 'react-icons/bi';
 
-import { Input } from '../../components/Input';
+import { Input } from '../components/Input';
 
 import { ContainerSignUp, ContainerSignUpLeft, ContainerSignUpRight } from './styles';
 

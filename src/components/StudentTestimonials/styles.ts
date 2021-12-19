@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.main`
   min-height: 100vh;
-  padding-top: 77px;
+  padding: 77px 0;
   background-color: ${({ theme }) => theme.colors.backgroundLight};
 
   h1 {
@@ -23,6 +23,17 @@ export const TestimonialsContainer = styled.div`
   grid-column-gap: 64px;
   grid-row-gap: 35px;
   justify-content: center;
+
+  @media (max-width: 1212px) {
+    grid-template-columns: 548px;
+  }
+
+  @media (max-width: 572px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const TestimonialCard = styled.div`
@@ -74,5 +85,10 @@ export const TestimonialCard = styled.div`
         font-size: 14px;
       }
     }
+  }
+
+  @media (max-width: 572px) {
+    width: 300px;
+    height: auto;
   }
 `;

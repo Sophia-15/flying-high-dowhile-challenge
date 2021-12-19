@@ -5,6 +5,7 @@ export const ContainerFooter = styled.footer`
   border-bottom: 1px solid #29292e;
   display: flex;
   flex-direction: column;
+  background-color: ${({ theme }) => theme.colors.backgroundLight};
 
   @media (max-width: 1040px) {
     border: 0;
@@ -137,8 +138,6 @@ export const FooterFooter = styled.footer`
   margin: auto 0;
 
   @media (max-width: 600px) {
-    margin: 1rem 0;
-
     display: flex;
     flex-direction: column;
   }
