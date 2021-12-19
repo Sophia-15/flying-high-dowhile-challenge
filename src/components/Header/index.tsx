@@ -2,7 +2,11 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useState, useEffect } from 'react';
 
-import { HeaderContainer } from './styles';
+import Link from 'next/link';
+
+import { AiOutlineUser } from 'react-icons/ai';
+
+import { HeaderContainer } from './styles'
 
 export function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -40,6 +44,14 @@ export function Header() {
           <a href="#testimonials">Depoimentos</a>
           <a href="#sponsors">Patrocinadores</a>
           <a href="#contact">Contato</a>
+          <Link href="sign_up">
+            <div className="sign-up">
+              <AiOutlineUser />
+                <a>
+                  Cadastro
+                </a>
+            </div>
+          </Link>
         </nav>
 
         <div
@@ -57,6 +69,7 @@ export function Header() {
             <li><a href="#subject">Conteúdo</a></li>
             <li><a href="#sponsors">Patrocinadores</a></li>
             <li><a href="#contact">Contato</a></li>
+            <li><a href="#contact">Cadastro</a></li>
           </ul>
         </nav>
       )}
