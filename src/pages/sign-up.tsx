@@ -9,6 +9,7 @@ import { BiLockAlt } from 'react-icons/bi';
 import { Input } from '../components/Input';
 
 import { ContainerSignUp, ContainerSignUpLeft, ContainerSignUpRight } from '../styles/pages/sign-up';
+import { Head } from 'next/document';
 
 export default function SingUp() {
   function submitTheSignUp() {
@@ -37,6 +38,9 @@ export default function SingUp() {
 
   return (
     <ContainerSignUp>
+      <Head>
+        <title>Cadastro | FlyingHigh</title>
+      </Head>
       <ContainerSignUpLeft>
       <ToastContainer />
         <img src="Logo.svg" alt="Logo Flying High" />
