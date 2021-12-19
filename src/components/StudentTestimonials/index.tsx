@@ -6,10 +6,10 @@ export function StudentTestimonials() {
       <h1>Depoimento de alunos</h1>
       <TestimonialsContainer>
         <TestimonialCard>
-          <p>“Hoje faço trabalhos para clientes até fora do Brasil, e isso em 11
-            meses que comecei a aprender com a Rocketseat. Tenho orgulho de
-            dizer que recebo no mínimo 3 contatos para entrevistas pelo
-            LinkedIn por semana, e sou um profissional procurado.”
+          <p>“A FlyingHigh me proporcionou oportunidades que eu não teria tido 
+            se não fosse por eles. Hoje em dia trabalho com o ReactJS como 
+            tecnologia principal mas tenho experiência tanto com o mobile quanto 
+            com o back-end com NodeJS, com clientes nacionais e internacionais.”
           </p>
 
           <div className="studentInfo">
@@ -22,10 +22,10 @@ export function StudentTestimonials() {
         </TestimonialCard>
 
         <TestimonialCard>
-          <p>“Hoje faço trabalhos para clientes até fora do Brasil, e isso em 11
-            meses que comecei a aprender com a Rocketseat. Tenho orgulho de
-            dizer que recebo no mínimo 3 contatos para entrevistas pelo
-            LinkedIn por semana, e sou um profissional procurado.”
+          <p>“A FlyingHigh me proporcionou oportunidades que eu não teria tido 
+            se não fosse por eles. Hoje em dia trabalho com o ReactJS como 
+            tecnologia principal mas tenho experiência tanto com o mobile quanto 
+            com o back-end com NodeJS, com clientes nacionais e internacionais.”
           </p>
 
           <div className="studentInfo">
@@ -38,10 +38,10 @@ export function StudentTestimonials() {
         </TestimonialCard>
 
         <TestimonialCard>
-          <p>“Hoje faço trabalhos para clientes até fora do Brasil, e isso em 11
-            meses que comecei a aprender com a Rocketseat. Tenho orgulho de
-            dizer que recebo no mínimo 3 contatos para entrevistas pelo
-            LinkedIn por semana, e sou um profissional procurado.”
+          <p>“A FlyingHigh me proporcionou oportunidades que eu não teria tido 
+            se não fosse por eles. Hoje em dia trabalho com o ReactJS como 
+            tecnologia principal mas tenho experiência tanto com o mobile quanto 
+            com o back-end com NodeJS, com clientes nacionais e internacionais.”
           </p>
 
           <div className="studentInfo">
@@ -54,10 +54,10 @@ export function StudentTestimonials() {
         </TestimonialCard>
 
         <TestimonialCard>
-          <p>“Hoje faço trabalhos para clientes até fora do Brasil, e isso em 11
-            meses que comecei a aprender com a Rocketseat. Tenho orgulho de
-            dizer que recebo no mínimo 3 contatos para entrevistas pelo
-            LinkedIn por semana, e sou um profissional procurado.”
+          <p>“A FlyingHigh me proporcionou oportunidades que eu não teria tido 
+            se não fosse por eles. Hoje em dia trabalho com o ReactJS como 
+            tecnologia principal mas tenho experiência tanto com o mobile quanto 
+            com o back-end com NodeJS, com clientes nacionais e internacionais.”
           </p>
 
           <div className="studentInfo">
