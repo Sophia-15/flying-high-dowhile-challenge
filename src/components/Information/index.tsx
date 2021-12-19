@@ -1,19 +1,16 @@
-import React from 'react';
-
 import { FiCalendar, FiKey, FiUsers } from 'react-icons/fi';
 
-import { 
+import {
   CardInformation,
   Container,
   ContainerInformation,
   ContentCard,
-  ContentInformation, 
-  LeftInformation, 
-  RightInformation 
+  ContentInformation,
+  LeftInformation,
+  RightInformation,
 } from './styles';
 
-
-export function Information(){
+export function Information() {
   return (
     <Container id="project">
       <ContainerInformation>
@@ -38,35 +35,35 @@ export function Information(){
               </ContentCard>
             </CardInformation>
 
-              <CardInformation>
-                <FiCalendar size="40" color="white" />
+            <CardInformation>
+              <FiCalendar size="40" color="white" />
 
-                <ContentCard>
-                  <h2>Como fazemos isso?</h2>
+              <ContentCard>
+                <h2>Como fazemos isso?</h2>
 
-                  <p>
-                    Através de cursos feitos por profissionais
-                    no mercado e de financiamentos coletivos.
-                  </p>
-                </ContentCard>
-              </CardInformation>
+                <p>
+                  Através de cursos feitos por profissionais
+                  no mercado e de financiamentos coletivos.
+                </p>
+              </ContentCard>
+            </CardInformation>
 
-              <CardInformation>
-                <FiKey size="40" color="white" />
+            <CardInformation>
+              <FiKey size="40" color="white" />
 
-                <ContentCard>
-                  <h2>Qual é o nosso diferencial?</h2>
+              <ContentCard>
+                <h2>Qual é o nosso diferencial?</h2>
 
-                  <p>
-                    Um metódo de ensino prático e gratuito. Além
-                    da estrutura que apelidamos de Millennium Falcon:
-                    um local estilo Lan House que comporta diversos
-                    computadores onde somente o aluno cadastrado na
-                    plataforma poderá entrar, tornando o ensino mais
-                    acessível. 
-                  </p>
-                </ContentCard>
-              </CardInformation>
+                <p>
+                  Um metódo de ensino prático e gratuito. Além
+                  da estrutura que apelidamos de Millennium Falcon:
+                  um local estilo Lan House que comporta diversos
+                  computadores onde somente o aluno cadastrado na
+                  plataforma poderá entrar, tornando o ensino mais
+                  acessível.
+                </p>
+              </ContentCard>
+            </CardInformation>
           </RightInformation>
         </ContentInformation>
       </ContainerInformation>

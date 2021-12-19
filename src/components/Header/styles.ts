@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   height: 6rem;
-  border-bottom: 1px solid #29292E;
+  border-bottom: 1px solid #29292e;
   display: flex;
 
   .responsive-navbar {
@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
     width: 100vw;
     height: 100vh;
 
-    background-color: ${({theme}) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.background};
 
     z-index: 10;
 
@@ -21,7 +21,7 @@ export const HeaderContainer = styled.header`
     justify-content: center;
     align-items: center;
 
-    ul {     
+    ul {
       font-size: 2.6rem;
       line-height: 4rem;
 
@@ -30,19 +30,19 @@ export const HeaderContainer = styled.header`
       align-items: center;
 
       transition-duration: 0.5s;
-      
-      li {
-        padding: .5rem 0;
 
-        a { 
-          color: ${({theme}) => theme.colors.white};
+      li {
+        padding: 0.5rem 0;
+
+        a {
+          color: ${({ theme }) => theme.colors.white};
         }
       }
     }
   }
 
   .headerContent {
-    width: 100%;  
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 
@@ -54,25 +54,25 @@ export const HeaderContainer = styled.header`
       display: flex;
       align-items: center;
 
-      a { 
+      a {
         display: inline-block;
         position: relative;
         padding: 0 .5rem;
         line-height: 5rem;
-        color: ${({theme}) => theme.colors.footerText};
+        color: ${({ theme }) => theme.colors.footerText};
         font-size: 1.1rem;
 
-        transition: color .3s;
+        transition: color 0.3s;
 
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           width: 100%;
           transform: scaleX(0);
           height: 1px;
           bottom: 25px;
           left: 0;
-          background: ${({theme}) => theme.colors.blue};
+          background: ${({ theme }) => theme.colors.blue};
           transform-origin: bottom right;
           transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
         }
@@ -81,10 +81,9 @@ export const HeaderContainer = styled.header`
           transform: scaleX(1);
           transform-origin: bottom left;
         }
-         
 
         &:hover {
-          color: ${({theme}) => theme.colors.descriptionText};
+          color: ${({ theme }) => theme.colors.descriptionText};
         }
 
         & + a {
@@ -142,7 +141,7 @@ export const HeaderContainer = styled.header`
       height: 50px;
 
       cursor: pointer;
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
 
     .fixed {
@@ -155,9 +154,9 @@ export const HeaderContainer = styled.header`
 
       background: #fff;
       border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(255,101,47,.2);
+      box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
 
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
     .menu-btn__burger::before,
     .menu-btn__burger::after {
@@ -169,9 +168,9 @@ export const HeaderContainer = styled.header`
 
       background: #fff;
       border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(255,101,47,.2);
+      box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
 
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
     .menu-btn__burger::before {
       transform: translateY(-16px);
@@ -179,7 +178,7 @@ export const HeaderContainer = styled.header`
     .menu-btn__burger::after {
       transform: translateY(16px);
     }
-      
+
     .menu-btn.open .menu-btn__burger {
       transform: translateX(-50px);
       background: transparent;
@@ -190,7 +189,7 @@ export const HeaderContainer = styled.header`
     }
     .menu-btn.open .menu-btn__burger::after {
       transform: rotate(-45deg) translate(35px, 35px);
-    } 
+    }
   }
 
   @media (max-width: 1480px) {
@@ -222,4 +221,4 @@ export const HeaderContainer = styled.header`
       }
     }
   }
-`
+`;

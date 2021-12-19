@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import { useState, useEffect } from 'react';
 
 import Link from 'next/link';
 
@@ -10,7 +12,7 @@ export function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   function toggleMenu() {
-    setShowMenu(!showMenu);   
+    setShowMenu(!showMenu);
   }
 
   useEffect(() => {
@@ -18,7 +20,7 @@ export function Header() {
     let menuOpen = false;
 
     menuBtn.addEventListener('click', () => {
-      if(!menuOpen) {
+      if (!menuOpen) {
         menuBtn.classList.add('open');
         menuBtn.classList.add('fixed');
         menuOpen = true;
@@ -28,7 +30,7 @@ export function Header() {
         menuOpen = false;
       }
     });
-  }, [])
+  }, []);
 
   return (
     <HeaderContainer>
@@ -39,6 +41,7 @@ export function Header() {
           <a href="#home">Home</a>
           <a href="#project">Projeto</a>
           <a href="#subject">Conteúdo</a>
+          <a href="#testimonials">Depoimentos</a>
           <a href="#sponsors">Patrocinadores</a>
           <a href="#contact">Contato</a>
           <Link href="sign_up">
@@ -51,8 +54,11 @@ export function Header() {
           </Link>
         </nav>
 
-        <div className="menu-btn" onClick={() => toggleMenu()}>
-          <div className="menu-btn__burger"></div>
+        <div
+          className="menu-btn"
+          onClick={() => toggleMenu()}
+        >
+          <div className="menu-btn__burger" />
         </div>
       </div>
       {showMenu && (

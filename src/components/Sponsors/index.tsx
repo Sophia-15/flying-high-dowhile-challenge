@@ -1,8 +1,6 @@
-import React from 'react';
+import { Container, ContainerSponsors, ContentSponsors } from './styles';
 
-import { Container, ContainerSponsors, ContentSponsors } from './styles'
-
-export function Sponsors(){
+export function Sponsors() {
   return (
     <Container id="sponsors">
       <ContainerSponsors>
