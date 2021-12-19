@@ -8,7 +8,7 @@ import { BiLockAlt } from 'react-icons/bi';
 
 import { Input } from '../components/Input';
 
-import { ContainerSignUp, ContainerSignUpLeft, ContainerSignUpRight } from './styles';
+import { ContainerSignUp, ContainerSignUpLeft, ContainerSignUpRight } from '../styles/pages/sign-up';
 
 export default function SingUp() {
   function submitTheSignUp() {
